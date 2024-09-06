@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/logo_menu"
         android:layout_width="300dp"
-        android:layout_height="280dp"
+        android:layout_height="300dp"
         android:src="@drawable/logo01"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,29 +33,29 @@
         app:layout_constraintTop_toBottomOf="@id/logo_menu"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/adicionarProduto"
+        android:id="@+id/text_adiciona_produto"
         style="@style/Button"
         android:text="Adicionar Produto"
         android:layout_margintop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/text_menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_menu"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/consultaProduto"
+        android:id="@+id/text_consultaProduto"
         style="@style/Button"
         android:text="Consulta Produto"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/adicionarProduto"
+        app:layout_constraintTop_toBottomOf="@id/text_adiciona_produto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/removeProduto"
+        android:id="@+id/text_removeProduto"
         style="@style/Button"
         android:text="Remover Produto"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/consultaProduto"
+        app:layout_constraintTop_toBottomOf="@id/text_consultaProduto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -64,10 +64,8 @@
         style="@style/Button"
         android:text="Perfil do Colaborador"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/removeProduto"
+        app:layout_constraintTop_toBottomOf="@id/text_removeProduto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
