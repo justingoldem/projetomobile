@@ -22,7 +22,7 @@
             android:name=".FormCadastro"
             android:exported="false" />
         <activity
-            android:name=".menu"
+            android:name=".mainMenu"
             android:exported="false" />
         <activity
             android:name=".FormLogin"

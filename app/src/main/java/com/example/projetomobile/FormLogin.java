@@ -13,7 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class FormLogin extends AppCompatActivity {
 
-    private TextView text_tela_cadastro;
+    //private TextView text_tela_cadastro;
+    private androidx.appcompat.widget.AppCompatButton bt_entrar;
 
 
     @Override
@@ -21,20 +22,31 @@ public class FormLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_login);
 
-            IniciarComponentes();
+        IniciarComponentes();
+        {
 
-            text_tela_cadastro.setOnClickListener(new View.OnClickListener() {
+            // text_tela_cadastro.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            // public void onClick(View v) {
+            //  Intent intent = new Intent(FormLogin.this, FormCadastro.class);
+            //  startActivity(intent);
+
+//}
+            //});
+            bt_entrar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(FormLogin.this,FormCadastro.class);
+                    Intent intent = new Intent(FormLogin.this, mainMenu.class);
                     startActivity(intent);
-
                 }
             });
+
+
         }
 
-    private void IniciarComponentes(){
-        text_tela_cadastro = findViewById(R.id.text_tela_cadrastro);
+        }
+        private void IniciarComponentes() {
+            //text_tela_cadastro = findViewById(R.id.text_tela_cadrastro);
+            bt_entrar = findViewById(R.id.bt_entrar);
     }
 }
-
