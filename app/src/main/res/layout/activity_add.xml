@@ -24,7 +24,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Adicionar Produtos"
+        android:text="Adicionar Produto"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,10 +34,10 @@
         app:layout_constraintVertical_bias="0.078" />
 
     <EditText
-        android:id="@+id/codigo_produto"
+        android:id="@+id/codigoProduto"
         style="@style/edit_form"
         android:layout_marginTop="12dp"
-        android:inputType="numberSigned"
+        android:inputType="number|numberSigned"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,11 +54,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/codigo_produto"
+        app:layout_constraintTop_toBottomOf="@+id/codigoProduto"
         app:layout_constraintVertical_bias="0.066" />
 
     <EditText
-        android:id="@+id/name_produto"
+        android:id="@+id/nameProduto"
         style="@style/edit_form"
         android:layout_marginTop="12dp"
         android:inputType="textAutoComplete"
@@ -79,11 +79,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name_produto"
+        app:layout_constraintTop_toBottomOf="@id/nameProduto"
         app:layout_constraintVertical_bias="0.1" />
 
     <EditText
-        android:id="@+id/qua_produto"
+        android:id="@+id/quaProduto"
         style="@style/edit_form"
         android:layout_marginTop="12dp"
         android:inputType="number"
@@ -101,7 +101,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qua_produto"
+        app:layout_constraintTop_toBottomOf="@+id/quaProduto"
         app:layout_constraintVertical_bias="0.427" />
 
 
