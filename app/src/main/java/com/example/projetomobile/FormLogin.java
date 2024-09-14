@@ -52,5 +52,11 @@ public class FormLogin extends AppCompatActivity {
             limpar();
         }
     }
+
+    private void limpar(){
+        txtUsuario.setText("");
+        txtSenha.setText("");
+        txtUsuario.requestFocus();
+    }
 }
 
