@@ -5,4 +5,5 @@
     <string name="title_cadastro">Cadastre-se</string>
     <string name="enviar">Enviar</string>
     <string name="pesquisar">Pesquisar Produto</string>
+    <string name="remover">Remover produto</string>
 </resources>

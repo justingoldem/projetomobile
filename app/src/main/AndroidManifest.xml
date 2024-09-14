@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Projetomobile"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adpterproduto1"
+            android:exported="false" />
+        <activity
+            android:name=".remove"
+            android:exported="false" />
+        <activity
+            android:name=".adpterProduto"
+            android:exported="false" />
+        <activity
+            android:name=".Produto"
+            android:exported="false" />
+        <activity
             android:name=".consult"
             android:exported="false" />
         <activity

@@ -13,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class mainMenu extends AppCompatActivity {
 
     private androidx.appcompat.widget.AppCompatButton text_adicionaproduto;
+    private androidx.appcompat.widget.AppCompatButton text_consult;
+    private androidx.appcompat.widget.AppCompatButton text_remover;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +25,23 @@ public class mainMenu extends AppCompatActivity {
         IniciarComponentes();
         {
             text_adicionaproduto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mainMenu.this, add.class);
+                startActivity(intent);
+            }
+        });
+            text_consult.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(mainMenu.this, add.class);
+                    Intent intent = new Intent(mainMenu.this, consult.class);
+                    startActivity(intent);
+                }
+            });
+            text_remover.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(mainMenu.this, remove.class);
                     startActivity(intent);
                 }
             });
@@ -34,5 +50,8 @@ public class mainMenu extends AppCompatActivity {
         }
     private void IniciarComponentes() {
         text_adicionaproduto = findViewById(R.id.text_adicionaproduto);
+        text_consult = findViewById(R.id.text_consultaProduto);
+        text_remover = findViewById(R.id.text_removeProduto);
     }
-}
+    }
+
