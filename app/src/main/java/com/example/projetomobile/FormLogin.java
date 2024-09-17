@@ -15,48 +15,36 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class FormLogin extends AppCompatActivity {
 
-
-   Button bt_entrar;
-   EditText txtUsuario,txtSenha;
-   TextView lbResultado;
+    private androidx.appcompat.widget.AppCompatButton bt_entrar;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_form_login);
 
-        txtUsuario = findViewById(R.id.edit_email);
-        txtSenha = findViewById(R.id.edit_senha);
-        lbResultado = findViewById(R.id.resultado);
-        bt_entrar = findViewById(R.id.bt_entrar);
-    }
-    public void login (View v){
-        String nome = txtUsuario.getText().toString();
-        String senha = txtSenha.getText().toString();
+        IniciarComponentes();
+        {
+            bt_entrar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(FormLogin.this, mainMenu.class);
+                    startActivity(intent);
+                }
+            });
 
 
-        if (nome.equalsIgnoreCase("admin")){
-            if(senha.equalsIgnoreCase("12345")) {
-                lbResultado.setText("login com sucesso!");
-                Intent intent = new Intent(FormLogin.this, mainMenu.class);
-                startActivity(intent);
-
-                finish();
-            }else{
-                lbResultado.setText("senha invalida!");
-                limpar();
-            }
-        }else {
-            lbResultado.setText("usuario invalido!");
-            limpar();
         }
-    }
 
-    private void limpar(){
-        txtUsuario.setText("");
-        txtSenha.setText("");
-        txtUsuario.requestFocus();
+    }
+    private void IniciarComponentes() {
+        bt_entrar = findViewById(R.id.bt_entrar);
+
     }
 }
+
+
+
+
 
